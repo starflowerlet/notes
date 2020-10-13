@@ -166,8 +166,8 @@ getitem 返回一个字典，数据和标签
 ​				
 ​						
 ​				
-			xxxxxxxxx <details>    <summary>已折叠图片</summary>     <img src="htt
-	已折叠图片 
+​			xxxxxxxxx <details>    <summary>已折叠图片</summary>     <img src="htt
+​	已折叠图片 
 
 
 > 折叠 typora 字体颜色 代码块 页内跳转
@@ -257,6 +257,23 @@ plt.savefig('./plot/'+random_name+'.png')
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考[版本回退](https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192)一节，不过前提是没有推送到远程库。
 
 `git rm`用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失**最近一次提交后你修改的内容**
+
+连接远程库
+
+```sh
+git remote add origin https://github.com/starflowerlet/notes.git
+git branch -M main
+git push -u origin main
+```
+
+如果报错`fatal: remote origin already exists.`
+
+```csharp
+1、先输入 git remote rm origin
+2、再输入 git remote add origin**************
+```
+
+
 
 >[回溯 leetcode]()
 
