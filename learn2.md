@@ -153,22 +153,6 @@ getitem 返回一个字典，数据和标签
   
   
 
-> LSTM
-
-
-
-
-				HTML
-
-
-​					
-​				
-​				
-​						
-​				
-​			xxxxxxxxx <details>    <summary>已折叠图片</summary>     <img src="htt
-​	已折叠图片 
-
 
 > 折叠 typora 字体颜色 代码块 页内跳转
 
@@ -208,6 +192,10 @@ num_directions=1 因为是单向LSTM
 Outputs: output, (h_n, c_n)
 '''
 output,(hn,cn) = rnn(inputs,(h0,c0))　调用类对象
+
+output保存了最后一层，每个time step的输出h，如果是双向LSTM，每个time step的输出h = [h正向, h逆向] (同一个time step的正向和逆向的h连接起来)。
+ h_n保存了每一层，最后一个time step的输出h，如果是双向LSTM，单独保存前向和后向的最后一个time step的输出h。
+ c_n与h_n一致，只是它保存的是c的值。
 
 > 建立软链接
 

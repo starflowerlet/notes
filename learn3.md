@@ -1,4 +1,4 @@
->Tips python
+## Tips python
 
 - python 多进程共享的ndarray数组是只读的。　解决方案是复制一份到当前进程。
 
@@ -24,13 +24,13 @@
 
 
 
-> NLP资讯
+## NLP资讯
 
 2020.3语言与智能技术竞赛：***机器阅读理解、面向推荐的对话、关系抽取、语义解析和事件抽取\***
 
 **自然语言处理（NLP）方向比较著名的几个会议有：ACL、EMNLP、NACAL、CoNLL、IJCNLP、CoNLL、IJCNLP、COLING、ICLR、AAAI、NLPCC**
 
-> pytorch
+## pytorch
 
 - premute(dims) 参数是一系列的整数，代表原来张量的维度。比如三维就有0，1，2这些dimension
 
@@ -82,19 +82,19 @@
 
   ​	//dec_input = torch.tensor([ 101 ] * batch_size).view(-1,1).to(device)
 
-> #### vscode
+## vscode
 
-######  vscode 跳转到指定的行数的快捷键: Ctrl+G
+- vscode 跳转到指定的行数的快捷键: Ctrl+G
 
-###### VScode快速移动光标到行尾和行首: **使用Home键和End键** （在方向键上面）
+- VScode快速移动光标到行尾和行首: **使用Home键和End键** （在方向键上面）
 
-###### 神操作：　shift+ctrl+方向键
+- 神操作：　shift+ctrl+方向键
 
 
 
-> 流畅的python
+## 流畅的python
 
-#### operator库
+### operator库
 
 - reduce用来作简单的递归，比如求和（sum）,求积。
 
@@ -144,7 +144,6 @@ def fact(n):
     
 
 
->#### 10.12
 
 ### logging
 
